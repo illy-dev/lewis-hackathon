@@ -2,6 +2,7 @@
 
 import RandomImages from "./RandomImages";
 import Fog from "./Fog";
+import Sun from "./Sun";
 
 import { useState, useEffect } from 'react';
 
@@ -10,6 +11,7 @@ export default function WeatherDisplay() {
 
     const cloudy = false
     const foggy = false
+    const sunny = false
 
     return(
         <div className="flex justify-center items-center mt-7">
@@ -22,7 +24,8 @@ export default function WeatherDisplay() {
                     speed={2}
                 />
             )}
-            {foggy && (<Fog></Fog>)}
+            {foggy && (<Fog />)}
+            {sunny && (<Sun />)}
         </div>
     );
 }

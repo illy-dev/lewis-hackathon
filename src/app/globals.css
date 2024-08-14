@@ -28,3 +28,21 @@ body {
 .custom-shape-divider-top-1723651244 .shape-fill {
   fill: #3B4252;
 }
+
+.gradient-transp-fog {
+  animation: fadeOut 2s forwards;
+}
+
+.mask-thingy {
+  -webkit-mask-image: url("../../public/blackscreen.png"), url(../../public/circle.png);
+  -webkit-mask-composite: xor, destination-out;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

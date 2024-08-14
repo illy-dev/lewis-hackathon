@@ -7,6 +7,7 @@ body {
   color: white;
 }
 
+/* Curves */
 
 .custom-shape-divider-top-1723651244 {
   position: flex;
@@ -27,4 +28,45 @@ body {
 
 .custom-shape-divider-top-1723651244 .shape-fill {
   fill: #3B4252;
+}
+
+.custom-shape-divider-bottom-1723669082 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723669082 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 242px;
+}
+
+.custom-shape-divider-bottom-1723669082 .shape-fill {
+  fill: #B5BDC0;
+}
+
+.custom-shape-divider-top-1723669279 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1723669279 svg {
+  position: relative;
+  display: block;
+  width: calc(192% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1723669279 .shape-fill {
+  fill: #B5BDC0;
 }

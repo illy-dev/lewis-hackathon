@@ -1,13 +1,19 @@
 'use client';
 import { IoSearch } from "react-icons/io5";
 
+import getWeather from "@/api/callWeatherApi";
+
 export default function Searchbar() {
 
     const handleSubmit = (e: React.ChangeEvent<any>) => {
         e.preventDefault();
         const formData = new FormData(e.target);
     
-        const loc = formData.get('location')
+        const loc = formData.get('location')?.toString()
+        if (loc != null) {
+            getWeather({ city: loc })
+        }
+        
         console.log(loc)
     }
 

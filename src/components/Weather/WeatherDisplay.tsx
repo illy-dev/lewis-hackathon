@@ -7,7 +7,9 @@ import { useState, useEffect } from 'react';
 
 export default function WeatherDisplay() {
     const screenWidth = useWidth();
+
     const cloudy = false
+    const foggy = false
 
     return(
         <div className="flex justify-center items-center mt-7">
@@ -20,7 +22,7 @@ export default function WeatherDisplay() {
                     speed={2}
                 />
             )}
-            <Fog></Fog>
+            {foggy && (<Fog></Fog>)}
         </div>
     );
 }

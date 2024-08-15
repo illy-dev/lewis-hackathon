@@ -69,4 +69,6 @@ export default async function getWeather({ city }: { city: string }) {
             weatherData.daily.temperature2mMin[i]
         );
     }
+
+    return weatherData;
 }

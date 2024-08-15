@@ -7,7 +7,7 @@ import Rain from "./Rain";
 
 import { useState, useEffect } from 'react';
 
-export default function WeatherDisplay() {
+export default function WeatherDisplay({ weatherData } : { weatherData: any }) {
     const screenWidth = useWidth();
 
     const cloudy = false
@@ -29,7 +29,8 @@ export default function WeatherDisplay() {
             {foggy && (<Fog />)}
             {sunny && (<Sun />)}
             {raining && (<Rain />)}
-            
+            <p>{weatherData}</p>
+
         </div>
     );
 }

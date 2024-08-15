@@ -2,33 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
-  background: #232730;
-  color: white;
+  background: white;
+  color: black;
+}
+
+.navbar-font {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: black 2px 2.5px;
 }
 
 /* Curves */
-
-.custom-shape-divider-top-1723651244 {
-  position: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1723651244 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 123px;
-}
-
-.custom-shape-divider-top-1723651244 .shape-fill {
-  fill: #3B4252;
-}
 
 .custom-shape-divider-bottom-1723669082 {
   position: absolute;

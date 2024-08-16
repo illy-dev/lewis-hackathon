@@ -42,8 +42,6 @@ export default function Home() {
             const data = await getWeather({ city: loc });
             setWeatherData(data);
         }
-        
-        console.log(loc);
     };
 
     return (

@@ -74,12 +74,11 @@ const useWidth = () => {
 };
 
 function ShowWeather({ weatherData, location, cloudy, raining, sunny }: ShowWeatherProps & { location: string, cloudy: boolean, raining: boolean, sunny: boolean }) {
-    let image = '';
+    let image = 'sunny.png';
     if (cloudy == true) {image = 'cloudy.png'}
     if (raining == true) {image = 'rainy.png'}
     if (sunny == true) {image = 'sunny.png'}
 
-    console.log(weatherData?.current.rain)
 
     return (
         <div>

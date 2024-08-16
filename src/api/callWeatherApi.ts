@@ -62,13 +62,5 @@ export default async function getWeather({ city }: { city: string }) {
         },
     };
 
-    for (let i = 0; i < weatherData.daily.time.length; i++) {
-        console.log(
-            weatherData.daily.time[i].toISOString(),
-            weatherData.daily.temperature2mMax[i],
-            weatherData.daily.temperature2mMin[i]
-        );
-    }
-
     return weatherData;
 }

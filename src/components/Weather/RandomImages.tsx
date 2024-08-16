@@ -57,7 +57,7 @@ const RandomImages: React.FC<RandomImagesProps> = ({ n, imageUrl, divWidth, divH
           key={index}
           src={imageUrl}
           alt={`random-img-${index}`}
-          className='max-h-32 max-w-64'
+          className='max-h-48 max-w-64'
           style={{
             position: 'absolute',
             top: pos.y,

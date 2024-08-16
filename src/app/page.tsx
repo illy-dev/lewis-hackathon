@@ -48,7 +48,7 @@ export default function Home() {
 
     return (
         <>
-            <Navbar />
+            {/*<Navbar />*/}
             <TitleBanner />
             <Searchbar handleSubmit={handleSubmit} />
             <WeatherDisplay weatherData={weatherData} location={location} />

@@ -8,7 +8,6 @@ export const WeatherCard = ({ max_temp, location, min_temp, date, image } : { ma
             <div className="flex items-start justify-center text-2xl flex-col pr-9">
                 <p className="whitespace-nowrap">📆 {date}</p>
                 <p className="whitespace-nowrap">▲ {max_temp}°C</p>
-                <p className="whitespace-nowrap">◆ </p>
                 <p className="whitespace-nowrap">▼ {min_temp}°C</p>
             </div>
         </div>

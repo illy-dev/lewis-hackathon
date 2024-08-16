@@ -46,17 +46,18 @@ export default function WeatherDisplay({ weatherData, location }: ShowWeatherPro
         <div className="mt-7">
             <div className='flex justify-center items-center'><ShowWeather weatherData={weatherData} location={location} cloudy={cloudy} raining={raining} sunny={sunny}/></div>
             {cloudy && (
+                <div className='absolute'>
                 <RandomImages
                     n={2}
                     imageUrl="cloud.png"
                     divWidth={screenWidth}
                     divHeight={390}
                     speed={2}
-                />
+                /></div>
             )}
             {foggy && <Fog />}
             {sunny && <Sun />}
-            {raining && <Rain />}
+            {raining && <div className="w-screen h-[23rem] absolute"><Rain /></div>}
         </div>
     );
 }
